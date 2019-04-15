@@ -113,7 +113,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($ambulance->photo_path == '')
                                 <img alt="user avatar" src="{{asset('/ambulance.png')}}">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$ambulance->b_ambulance_name}}</span>
                     </h2>
                 </div>
@@ -239,7 +239,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($ambulance->photo_path == '')
                                 <img alt="user avatar" src="{{asset('/ambulance.png')}}">
