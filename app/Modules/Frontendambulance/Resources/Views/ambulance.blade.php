@@ -336,11 +336,13 @@
                         </div>
                                           
                         <!-- START google maps -->
+                        @if($ambulance->ambulance_latitude != "")
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
                                 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD3_tCn50Ef5Z2zUJxkXi26T486gIzIHp8&q={{ $ambulance->ambulance_latitude }}, {{ $ambulance->ambulance_longitude }}&zoom=15" frameborder="0" height="600" style="border:0; width:100%;" allowfullscreen>
                             </iframe>
                         </div>
+                        @endif
                         <!-- END google maps -->
                         
                     </li>
